@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    justify-items: center;
+}
+h1{
+    text-align: center;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    flex: 25%;
+}
+
+article{
+    flex: 75%;
+}
+
+div ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+div ul li{
+    margin-right: 2%;
+}
+

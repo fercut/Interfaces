@@ -1,0 +1,95 @@
+.primero {
+    text-indent: 20px;
+    text-align: justify;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    vertical-align: middle;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.segundo {
+    text-indent: 15px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: lowercase;
+    line-height: 1.2;
+    vertical-align: baseline;
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.tercero{
+    text-indent: 25px;
+    text-align: right;
+    text-decoration: overline;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-transform: capitalize;
+    line-height: 1.8;
+    vertical-align: sub;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 18px;  
+}
+
+.cuarto{
+    text-indent: 18px;
+    text-align: justify;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    vertical-align: super;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.quinto{
+    text-indent: 22px;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: lowercase;
+    line-height: 1.6;
+    vertical-align: text-bottom;
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.sexto{
+    text-indent: 30px;
+    text-align: right;
+    text-decoration: line-through;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-transform: capitalize;
+    line-height: 1.7;
+    vertical-align: initial;
+    font-family: 'Palatino Linotype', serif;
+    font-style: oblique;
+    font-variant: normal;
+    font-weight: 700;
+    font-size: 16px; 
+}

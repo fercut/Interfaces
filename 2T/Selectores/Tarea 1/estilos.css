@@ -1,0 +1,14 @@
+li span{
+    color: #060;
+}
+
+.sustantivos{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parentesis{
+    color: #FFF;
+    background-color: #000;
+    font-style: italic;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" charset>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <h1>iDESWEB</h1>
+    <p>Formulario de registro</p>
+  
+    <div id="contenedor-formulario">
+      
+        <fieldset>
+          <legend>¿Quién eres?</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+  
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+  
+        <label for="dia">Fecha de Nacimiento:</label>
+        <select id="dia" name="dia">
+          <option value="">Dia</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+        </select>
+        
+        <select id="mes" name="mes" >
+            <option value="">Mes</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+        </select>
+        
+        <select id="ano" name="ano">
+            <option value="">Año</option>
+            <option value="">1988</option>
+            <option value="">1989</option>
+            <option value="">1990</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>¿De donde eres?</legend>
+
+        <label for="nombre">Ciudad:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="nombre">Codigo postal:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+    </fieldset>
+    <fieldset>
+        <legend>¿COMO QUIERES INICIAR SESION?</legend>
+
+        <label for="nombre">Nombre de usuario:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="nombre">Contraseña:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="nombre">Vuelva a escribir contraseña:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+    </fieldset>
+    <fieldset>
+        <legend>CONDICIONES DE REGISTRO</legend>
+
+        <label for="nombre">Deseas recibir ofertas de iDDESWEB</label>
+        <input type="radio" name="Una vez al dia" value="">Una vez al dia
+        <input type="radio" name="Una vez al dia" value="">Una vez a la semana
+        <input type="radio" name="Una vez al dia" value="">Una vez al mes
+        <input type="checkbox" class="checks">Acepto el acuerdo....
+    </fieldset>
+    <button type="submit">Crear cuenta</button>
+    </div>
+</body>
+</html>

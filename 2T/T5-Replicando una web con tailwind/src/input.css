@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* FUENTES */
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url('fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url('fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    @apply bg-[url("../img/pattern.png")];
+}
+
+.wrap {
+    @apply w-[1250px] mx-auto;
+}
+
+.gear, .icon {
+    @apply font-['WebSymbolsRegular'];
+}
+
+.clearfix {
+    @apply float-none clear-both;
+}
+
+/* CABECERA */
+#header {
+    @apply w-full h-[70px] bg-black text-white font-['BebasNeue'];
+}
+
+#logo {
+    @apply float-left w-[200px] bg-[#37bcf9] text-center mt-8 ml-20 text-lg tracking-wider cursor-pointer overflow-hidden transition-all duration-300;
+}
+
+#logo:hover {
+    @apply rounded-[2px] bg-[#ccc] text-black;
+}
+
+
+#logo h3 {
+    @apply block float-right text-[40px] mt-[5px] mr-[65px] transition-all duration-300;
+}
+
+#menu {
+    @apply float-right h-[70px] bg-transparent;
+}
+
+#menu ul li {
+    @apply text-[24px] inline-block mx-[20px] my-0 tracking-[1px] leading-[70px];
+}
+
+#menu ul li a {
+    @apply block text-white no-underline transition-all duration-200;
+}
+
+#menu ul li a:hover {
+    @apply text-[#37bcf9] scale-125;
+}
+
+/* TARJETAS */
+.card {
+    @apply float-left w-[205px] h-[305px] border-[1px] border-[#ccc] shadow-[1px-1px-2px-ddd] bg-white overflow-hidden m-[22px] mt-[40px] cursor-pointer transition-all duration-300;
+}
+
+.card:hover {
+    @apply bg-black;
+}
+
+.card:last-child {
+    @apply mr-0;
+}
+
+.card .icon {
+    @apply block w-full h-[130px] font-[50px] leading-[110px] text-center mx-auto transition-all duration-300;
+}
+
+.card .category {
+    @apply w-full h-[50px] font-["TrebuchetMS"] text-[21px] font-bold text-center text-[#00538c] transition-all duration-300;
+}
+
+.card .description {
+    @apply font-["TrebuchetMS"] text-center text-[#0370b9] text-[15px] transition-all duration-300;
+}
+
+/* BARRA LATERAL */
+#lateral {
+    @apply w-[300px] min-h-[1200px] font-["TrebuchetMS"] float-right m-[20px];
+}
+
+#lateral h3 {
+    @apply block w-auto h-[45px] leading-[49px] bg-[url('../img/pxgray.png')] shadow-[0px-1px-0px-#393d3f-1px-2px-0px-#393d3f-2px-3px-0px-#393d3f-3px-4px-0px-#393d3f] text-[30px] font-[BebasNeue] font-normal tracking-[2px] pl-[15px] mt-[30px] mb-[15px];
+}
+
+#lateral h3:first-child {
+    @apply mt-0;
+}
+
+#search {
+    @apply w-[90px] h-[30px] mx-auto bg-white border-[1px] border-[#ccc] rounded-[5px] shadow-[1px-1px-4px-#ccc-inset];
+}
+
+#lateral input[type="text"] {
+    @apply w-[85px] h-[30px] border-none pl-[5px] rounded-[5px] bg-transparent text-[#ccc] transition-all duration-300;
+}
+
+#lateral input[type="text"]:focus {
+    @apply text-[#555];
+}
+
+#lateral input[type="button"],
+#lateral input[type="submit"] {
+    @apply h-[30px] cursor-pointer text-[16px] bg-transparent border-none border-l-[1px] border-[#ccc] text-[#555] pl-[6px];
+}
+
+.aside-box {
+    @apply w-[85px] h-[240px] mx-auto mt-[20px] pt-[2px] bg-white shadow-[0px-0px-1px-rgba(0,-0,0,0.3)-0px-3px-7px-rgba(0,-0,0,0.3)-0px-1px-white-inset-0px--3px-2px-rgba(0,-0,0,0.3)-inset];
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    @apply block mx-auto mt-[20px] w-[82px] h-[30px] border-[1px] border-[#ccc] shadow-[1px-1px-1px-#ccc-inset] rounded-[5px] pl-[30px] text-[#808080];
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    @apply text-[#555] shadow-[1px-1px-1px-#808080-inset];
+}
+
+#login #user,
+#login #password {
+    @apply block text-center absolute ml-[15px] mt-[6px] h-[30px];
+}
+
+#login #password {
+    @apply ml-[18px] mt-[25px] text-[20px];
+}
+
+#login input[type="submit"],
+#login input[type="button"],
+#login input[type="reset"],
+#login button {
+    @apply text-center w-[100px] h-[35px] mt-[20px] text-white bg-gradient-to-b from-[#3eb8e5] to-[#2ca0ca] border-[1px] border-[#156785] cursor-pointer text-[15px] font-["TrebuchetMS"]  ml-[17px] mb-[20px] transition-all duration-300;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="button"]:hover,
+#login input[type="reset"]:hover,
+#login button:hover {
+    @apply shadow-[0px-0px-3px-gray];
+}
+
+#login a {
+    @apply block text-[14px]  ml-[18px] text-[#555];
+}
+
+#login a:hover {
+    @apply underline text-[#2f78bc];
+}
+
+#social {
+    @apply h-[190px];
+}
+
+#social a {
+    @apply block text-[#333] text-[30px] ml-[20px] mt-[10px] mb-[20px];
+}
+
+/* ARTICULOS */
+#articles {
+    @apply w-[860px] float-left;
+}
+
+#articles h2 {
+    @apply block w-full h-[75px] leading-[75px] text-center font-["BebasNeue"] text-[40px] font-normal tracking-[2px] bg-[url('../img/pxgray.png')] shadow-[0px-1px-0px-#393d3f-1px-2px-0px-#393d3f-2px-3px-0px-#393d3f-3px-4px-0px-#393d3f] mx-auto mt-[20px] mb-[15px];
+}
+
+#articles article {
+    @apply w-[98px] h-auto border-[1px] border-[#ccc] mx-auto mt-[40px] p-[10px] font-["TrebuchetMS"] bg-white text-black shadow-[1px-1px-2px-#ddd];
+}
+
+#articles article h4 {
+    @apply block text-[23px] m-[3px];
+}
+
+#articles article h4 a {
+    @apply text-[#00538c];
+}
+
+#articles article h4 a:hover {
+    @apply underline;
+}
+
+#articles .data {
+    @apply float-right bg-[#393d3f] text-white h-[30px] leading-[30px] m-[10px] p-[4px] text-[13px] rounded-[0-0-0-5px];
+}
+
+#articles .data span {
+    @apply m-[6px];
+}
+
+#articles article p {
+    @apply mt-[10px] mb-[10px] text-[15px];
+}
+
+#blog {
+    @apply h-[100px] mt-[60px] leading-[100px] text-center transition-all duration-[1s];
+}
+
+#blog a {
+    @apply block font-["BebasNeue"] text-[40px] tracking-[3px] text-[#00538c]  transition-all duration-[1s];
+}
+
+
+
+/* FOOTER */
+#footer {
+    @apply w-full h-[470px] bg-black text-white overflow-hidden;
+}
+
+#footer .wrap > div {
+    @apply float-left w-[320px] h-[370px] m-[40px] text-center text-white font-["TrebuchetMS"];
+}
+
+#footer a {
+    @apply  text-[#37bcf9] transition-all duration-300;
+}
+
+#footer h5 {
+    @apply block bg-[url('../img/pxgray.png')] h-[50px] tracking-[2px] text-center font-["BebasNeue"] text-[40px] leading-[55px] text-black rounded-[5px] mb-[15px];
+}
+
+#footer ul {
+    @apply text-left m-[20px] text-[25px];
+}
+
+#footer ul li a {
+    @apply block h-[40px] transition-all duration-300;
+}
+
+#footer ul li:hover a {
+    @apply pl-[40px] text-white w-full;
+}
+
+#footer img {
+    @apply mb-[15px];
+}
+
+#footer #browsers img {
+    @apply w-[45px];
+}
